@@ -41,7 +41,7 @@ Refinery::Core.configure do |config|
   # config.dragonfly_secret = "e5315d4239be6cfad631bf18563392653a0a4e5066d7d15f"
 
   # Register extra javascript for backend
-  # config.register_javascript "prototype-rails"
+  config.register_javascript "prototype-rails"
 
   # Register extra stylesheet for backend (optional options)
   config.register_stylesheet "custom", :media => 'screen'

@@ -36,6 +36,11 @@ module NYVRCms
     ENV['S3_SECRET']='ex5brOIgcokuE6rPK5GuFS5vE38SrLrO7XzN3w5r'
     ENV['S3_BUCKET']='iloveny'
 
-    config.assets.initialize_on_precompile = true
+        # refinery change content-disipotion
+    Refinery::Core::Engine.after_inclusion do
+      Refinery::Resource # force autoload
+
+      ::Dragonfly.app(:refinery_resources).response_header('Content-Disposition', nil)
+    end
   end
 end
