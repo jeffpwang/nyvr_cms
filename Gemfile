@@ -6,9 +6,11 @@ gem 'rails', '4.2.9'
 # Use sqlite3 as the database for Active Record
 group :development, :test do
   gem 'sqlite3'
+  gem 'byebug'
 end
 group :production do
   gem 'pg'
+  gem 'dragonfly-s3_data_store'
 end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -53,7 +55,7 @@ end
 
 # Refinery CMS
 gem 'refinerycms', '~> 3.0'
-
+gem 'refinerycms-videos', git: 'https://github.com/bisscomm/refinerycms-videos', branch: 'master'
 # Optionally, specify additional Refinery CMS Extensions here:
 gem 'refinerycms-acts-as-indexed', ['~> 2.0', '>= 2.0.1']
 gem 'refinerycms-wymeditor', ['~> 1.0', '>= 1.0.6']
@@ -62,3 +64,5 @@ gem 'refinerycms-authentication-devise', '~> 1.0'
 #  gem 'refinerycms-inquiries', ['~> 3.0', '>= 3.0.0']
 #  gem 'refinerycms-search', ['~> 3.0', '>= 3.0.0']
 #  gem 'refinerycms-page-images', ['~> 3.0', '>= 3.0.0']
+
+gem 'refinerycms-contents', path: 'vendor/extensions'

@@ -1,0 +1,29 @@
+sk:
+  refinery:
+    plugins:
+      contents:
+        title: Contents
+    contents:
+      admin:
+        contents:
+          actions:
+            create_new: Pridať Content
+            reorder: Preusporiadať Contents
+            reorder_done: Koniec radenia Contents
+          records:
+            title: Contents
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Contents. Kliknite na "Pridať Content" pre pridanie prvého content.
+          content:
+            view_live_html: Zobraziť náhľad content<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť content
+            delete: Zmazať content
+      contents:
+        show:
+          other: Daľšie Contents
+  activerecord:
+    attributes:
+      'refinery/contents/content':
+        title: Title
+        thumbnail: Thumbnail
+        file: File

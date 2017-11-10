@@ -1,0 +1,29 @@
+tr:
+  refinery:
+    plugins:
+      contents:
+        title: Contents
+    contents:
+      admin:
+        contents:
+          actions:
+            create_new: Yeni Ekle Content
+            reorder: Tekrar sirala Contents
+            reorder_done: Tekrar siralama tamamlandiContents
+          records:
+            title: Contents
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Contents yok henuz.  Tikla "Yeni Ekle Content" eklemek senin ilk content.
+          content:
+            view_live_html: Bunu canlu content goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle content
+            delete: Bunu Sil content sonsuza dek
+      contents:
+        show:
+          other: Diger Contents
+  activerecord:
+    attributes:
+      'refinery/contents/content':
+        title: Title
+        thumbnail: Thumbnail
+        file: File

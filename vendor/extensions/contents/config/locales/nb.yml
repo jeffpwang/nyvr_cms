@@ -1,0 +1,29 @@
+nb:
+  refinery:
+    plugins:
+      contents:
+        title: Contents
+    contents:
+      admin:
+        contents:
+          actions:
+            create_new: Lag en ny Content
+            reorder: Endre rekkefølgen på Contents
+            reorder_done: Ferdig å endre rekkefølgen Contents
+          records:
+            title: Contents
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Contents enda. Klikk på "Lag en ny Content" for å legge til din første content.
+          content:
+            view_live_html: Vis hvordan denne content ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne content
+            delete: Fjern denne content permanent
+      contents:
+        show:
+          other: Andre Contents
+  activerecord:
+    attributes:
+      'refinery/contents/content':
+        title: Title
+        thumbnail: Thumbnail
+        file: File

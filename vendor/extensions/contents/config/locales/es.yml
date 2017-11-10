@@ -1,0 +1,30 @@
+es:
+  refinery:
+    plugins:
+      contents:
+        title: Contents
+#        article: masculino/femenino
+    contents:
+      admin:
+        contents:
+          actions:
+            create_new: Crear nuevo content
+            reorder: Reordenar contents
+            reorder_done: Reordenación de contents completada
+          records:
+            title: Contents
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay contents todavía. Pulsa en "Crear nuevo Content" para crear tu primer content.
+          content:
+            view_live_html: Ver este content como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este content
+            delete: Borrar este content para siempre
+      contents:
+        show:
+          other: Otros contents
+  activerecord:
+    attributes:
+      'refinery/contents/content':
+        title: Title
+        thumbnail: Thumbnail
+        file: File

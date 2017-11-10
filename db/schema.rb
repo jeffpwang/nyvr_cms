@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171110170056) do
+ActiveRecord::Schema.define(version: 20171110173830) do
 
   create_table "refinery_authentication_devise_roles", force: :cascade do |t|
     t.string "title"
@@ -54,6 +54,15 @@ ActiveRecord::Schema.define(version: 20171110170056) do
 
   add_index "refinery_authentication_devise_users", ["id"], name: "index_refinery_authentication_devise_users_on_id"
   add_index "refinery_authentication_devise_users", ["slug"], name: "index_refinery_authentication_devise_users_on_slug"
+
+  create_table "refinery_contents", force: :cascade do |t|
+    t.string   "title"
+    t.integer  "thumbnail_id"
+    t.integer  "file_id"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "refinery_image_translations", force: :cascade do |t|
     t.integer  "refinery_image_id", null: false
@@ -161,6 +170,27 @@ ActiveRecord::Schema.define(version: 20171110170056) do
     t.integer  "file_size"
     t.string   "file_uid"
     t.string   "file_ext"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "refinery_video_translations", force: :cascade do |t|
+    t.integer  "refinery_video_id", null: false
+    t.string   "locale",            null: false
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
+    t.string   "title"
+    t.string   "video_key"
+  end
+
+  add_index "refinery_video_translations", ["locale"], name: "index_refinery_video_translations_on_locale"
+  add_index "refinery_video_translations", ["refinery_video_id"], name: "index_refinery_video_translations_on_refinery_video_id"
+
+  create_table "refinery_videos", force: :cascade do |t|
+    t.string   "title"
+    t.string   "video_key"
+    t.integer  "draft",      default: 1
+    t.integer  "position"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -1,0 +1,29 @@
+en:
+  refinery:
+    plugins:
+      contents:
+        title: Contents
+    contents:
+      admin:
+        contents:
+          actions:
+            create_new: Add New Content
+            reorder: Reorder Contents
+            reorder_done: Done Reordering Contents
+          records:
+            title: Contents
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Contents yet. Click "Add New Content" to add your first content.
+          content:
+            view_live_html: View this content live <br/><em>(opens in a new window)</em>
+            edit: Edit this content
+            delete: Remove this content forever
+      contents:
+        show:
+          other: Other Contents
+  activerecord:
+    attributes:
+      'refinery/contents/content':
+        title: Title
+        thumbnail: Thumbnail
+        file: File

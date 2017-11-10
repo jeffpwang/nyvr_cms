@@ -1,0 +1,32 @@
+<%= form_for [refinery, :contents_admin, @content] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @content,
+              :include_object_name => true %>
+
+  <div class='field'>
+    <%= f.label :title -%>
+    <%= f.text_field :title, :class => 'larger widest' -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :thumbnail -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :thumbnail_id,
+               :image => @content.thumbnail,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :file -%>
+    <%= render '/refinery/admin/resource_picker',
+               :f => f,
+               :field => :file_id,
+               :resource => @content.file -%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.contents.admin.contents.content'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @content.title) -%>
+<% end -%>

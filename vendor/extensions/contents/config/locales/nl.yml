@@ -1,0 +1,29 @@
+nl:
+  refinery:
+    plugins:
+      contents:
+        title: Contents
+    contents:
+      admin:
+        contents:
+          actions:
+            create_new: Nieuwe Content toevoegen
+            reorder: De volgorde van de Contents wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Content-volgorde
+          records:
+            title: Contents
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Contents. Druk op 'Nieuwe Content toevoegen' om de eerste toe te voegen.
+          content:
+            view_live_html: Deze content op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze content
+            delete: Deze content definitief verwijderen
+      contents:
+        show:
+          other: Andere Contents
+  activerecord:
+    attributes:
+      'refinery/contents/content':
+        title: Title
+        thumbnail: Thumbnail
+        file: File

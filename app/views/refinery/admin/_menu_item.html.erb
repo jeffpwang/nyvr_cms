@@ -1,0 +1,13 @@
+<% if menu_item.title == "Files" %>
+<%= link_to "360 Content", refinery.url_for(menu_item.url),
+            :class => ("active" if menu_item.highlighted?(params)),
+            :id => "plugin_#{menu_item.name}" %>
+<% elsif menu_item.title == "Images" %>
+<%= link_to "Thumbnails", refinery.url_for(menu_item.url),
+            :class => ("active" if menu_item.highlighted?(params)),
+            :id => "plugin_#{menu_item.name}" %>
+<% else %>
+<%= link_to menu_item.title, refinery.url_for(menu_item.url),
+            :class => ("active" if menu_item.highlighted?(params)),
+            :id => "plugin_#{menu_item.name}" %>
+<% end %>

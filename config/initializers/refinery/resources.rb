@@ -1,7 +1,7 @@
 # encoding: utf-8
 Refinery::Resources.configure do |config|
   # Configures the maximum allowed upload size (in bytes) for a file upload
-  # config.max_file_size = 52428800
+  config.max_file_size = 1052428800
 
   # Configure how many resources per page should be displayed when a dialog is presented that contains resources
   # config.pages_per_dialog = 12

@@ -1,0 +1,29 @@
+it:
+  refinery:
+    plugins:
+      contents:
+        title: Contents
+    contents:
+      admin:
+        contents:
+          actions:
+            create_new: Aggiungi Nuovo Content
+            reorder: Riordina Contents
+            reorder_done: Termina il Riordino di Contents
+          records:
+            title: Contents
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Contents. Clicca "Aggiungi Nuovo Content" per aggiungere il tuo primo content.
+          content:
+            view_live_html: Guarda live questo content <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo content
+            delete: Rimuovi per sempre questo content
+      contents:
+        show:
+          other: Altri Contents
+  activerecord:
+    attributes:
+      'refinery/contents/content':
+        title: Title
+        thumbnail: Thumbnail
+        file: File

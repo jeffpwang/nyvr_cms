@@ -1,0 +1,29 @@
+ru:
+  refinery:
+    plugins:
+      contents:
+        title: Contents
+    contents:
+      admin:
+        contents:
+          actions:
+            create_new: Добавить Content
+            reorder: Изменить порядок Contents
+            reorder_done: Закончить изменять порядок Contents
+          records:
+            title: Contents
+            sorry_no_results: "Извините, поиск не дал результатов."
+            no_items_yet: Записей "Contents" не найдено. Нажмите "Добавить Content" чтобы создать content.
+          content:
+            view_live_html: Просмотреть content вживую <br/><em>(в новом окне)</em>
+            edit: Редактировать content
+            delete: Удалить content навсегда
+      contents:
+        show:
+          other: Другие Contents
+  activerecord:
+    attributes:
+      'refinery/contents/content':
+        title: Title
+        thumbnail: Thumbnail
+        file: File

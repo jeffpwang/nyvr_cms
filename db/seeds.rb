@@ -8,3 +8,9 @@
 
 # Added by Refinery CMS Pages extension
 Refinery::Pages::Engine.load_seed
+
+# Added by Refinery CMS Videos extension
+Refinery::Videos::Engine.load_seed
+
+# Added by Refinery CMS Contents extension
+Refinery::Contents::Engine.load_seed
