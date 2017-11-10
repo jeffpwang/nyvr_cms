@@ -31,5 +31,11 @@ module NYVRCms
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    ENV['S3_KEY']='AKIAJWAVQAI2B3RZY6RQ'
+    ENV['S3_SECRET']='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'
+    ENV['S3_BUCKET']='iloveny'
+
+    config.assets.initialize_on_precompile = true
   end
 end
