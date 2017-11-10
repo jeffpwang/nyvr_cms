@@ -13,6 +13,8 @@ Refinery::Core::Engine.routes.draw do
           post :update_positions
         end
       end
+
+      get '/data' => 'contents#data'
     end
   end
 

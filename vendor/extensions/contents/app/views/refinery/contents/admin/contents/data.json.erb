@@ -1,0 +1,12 @@
+{
+	"version": "2.5", 
+	"data": [
+		<% @contents.each do |content| %>
+			{
+				name: <%= content.title %>, 
+				thumbnail: <%= request.base_url + content.thumbnail.url %>,
+				content: <%= request.base_url + content.file.url %>
+			},
+		<% end %>
+	]
+}
