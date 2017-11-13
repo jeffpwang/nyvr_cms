@@ -14,12 +14,6 @@ module Refinery
       #
       #   acts_as_indexed :fields => [:title]
 
-      def get_json
-        json = { :title => title, :thumbnail => thumbnail.url, :content => file.url }.to_json
-
-        return json
-      end
-
     end
   end
 end

@@ -2,6 +2,7 @@ Refinery::Core::Engine.routes.draw do
 
   # Frontend routes
   namespace :contents do
+    get '/data' => 'contents#data'
     resources :contents, :path => '', :only => [:index, :show]
   end
 
@@ -13,8 +14,6 @@ Refinery::Core::Engine.routes.draw do
           post :update_positions
         end
       end
-
-      get '/data' => 'contents#data'
     end
   end
 

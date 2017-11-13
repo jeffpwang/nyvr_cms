@@ -19,6 +19,12 @@ module Refinery
         present(@page)
       end
 
+      def data
+        respond_to do |format|
+          format.json
+        end
+      end
+
     protected
 
       def find_all_contents
