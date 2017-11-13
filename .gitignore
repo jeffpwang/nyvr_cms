@@ -95,3 +95,8 @@ capybara-*html
 # vendor/extensions dummy applications.
 vendor/extensions/**/spec/dummy
 
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
