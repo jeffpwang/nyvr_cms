@@ -36,5 +36,12 @@ module NYVRCms
     ENV['S3_KEY']='AKIAJWAVQAI2B3RZY6RQ'
     ENV['S3_SECRET']='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'
     ENV['S3_BUCKET']='iloveny'
+
+    Refinery::Core::Engine.after_inclusion do
+        Refinery::Resource # force autoload
+
+        ::Dragonfly.app(:refinery_resources).response_header('Content-Disposition', nil)
+    end
+
   end
 end
