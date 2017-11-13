@@ -1,12 +1,3 @@
-GIT
-  remote: https://github.com/bisscomm/refinerycms-videos
-  revision: b33e41cc61c970401620a7a60b29b7a6767437f0
-  branch: master
-  specs:
-    refinerycms-videos (3.0.0)
-      globalize (>= 4.0.0, < 5.2)
-      refinerycms-core (~> 3.0.0)
-
 PATH
   remote: vendor/extensions
   specs:
@@ -311,7 +302,6 @@ DEPENDENCIES
   refinerycms-acts-as-indexed (~> 2.0, >= 2.0.1)
   refinerycms-authentication-devise (~> 1.0)
   refinerycms-contents!
-  refinerycms-videos!
   refinerycms-wymeditor (~> 1.0, >= 1.0.6)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)

@@ -56,7 +56,6 @@ end
 
 # Refinery CMS
 gem 'refinerycms', '~> 3.0'
-gem 'refinerycms-videos', git: 'https://github.com/bisscomm/refinerycms-videos', branch: 'master'
 # Optionally, specify additional Refinery CMS Extensions here:
 gem 'refinerycms-acts-as-indexed', ['~> 2.0', '>= 2.0.1']
 gem 'refinerycms-wymeditor', ['~> 1.0', '>= 1.0.6']
