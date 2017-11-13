@@ -6,6 +6,7 @@ gem 'rails', '4.2.9'
 gem 'puma', '~> 3.7.1'
 gem 'mime-types'
 # Use sqlite3 as the database for Active Record
+gem 'sqlite3'
 group :development, :test do
   gem 'sqlite3'
 end
