@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171110173830) do
+ActiveRecord::Schema.define(version: 20171114151350) do
 
   create_table "refinery_authentication_devise_roles", force: :cascade do |t|
     t.string "title"
@@ -170,27 +170,6 @@ ActiveRecord::Schema.define(version: 20171110173830) do
     t.integer  "file_size"
     t.string   "file_uid"
     t.string   "file_ext"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "refinery_video_translations", force: :cascade do |t|
-    t.integer  "refinery_video_id", null: false
-    t.string   "locale",            null: false
-    t.datetime "created_at",        null: false
-    t.datetime "updated_at",        null: false
-    t.string   "title"
-    t.string   "video_key"
-  end
-
-  add_index "refinery_video_translations", ["locale"], name: "index_refinery_video_translations_on_locale"
-  add_index "refinery_video_translations", ["refinery_video_id"], name: "index_refinery_video_translations_on_refinery_video_id"
-
-  create_table "refinery_videos", force: :cascade do |t|
-    t.string   "title"
-    t.string   "video_key"
-    t.integer  "draft",      default: 1
-    t.integer  "position"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
