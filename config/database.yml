@@ -20,6 +20,9 @@ test:
   <<: *default
   database: db/test.sqlite3
 
-production:
-  <<: *default
-  database: db/production.sqlite3
+production: &production
+  adapter: mysql2
+  host: <%= ENV["RDS_HOST"] %>
+  database: <%= ENV["RDS_DB_NAME"] %>
+  username: <%= ENV["RDS_USERNAME"] %>
+  password: <%= ENV["RDS_PASSWORD"] %>
