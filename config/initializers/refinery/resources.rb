@@ -18,12 +18,12 @@ Refinery::Resources.configure do |config|
   # config.s3_region = ENV['S3_REGION']
 
   # Configure Dragonfly
-  # config.dragonfly_verify_urls = true
-  # config.dragonfly_secret = "e5315d4239be6cfad631bf18563392653a0a4e5066d7d15f"
-  # config.dragonfly_url_format = "/system/resources/:job/:basename.:ext"
-  # config.dragonfly_url_host = ""
-  # config.datastore_root_path = "/Users/jeffreywang/Development/NYVR_CMS/public/system/refinery/resources"
-  # config.content_disposition = :attachment
+  config.dragonfly_verify_urls = true
+  config.dragonfly_secret = "e5315d4239be6cfad631bf18563392653a0a4e5066d7d15f"
+  config.dragonfly_url_format = "/system/resources/:job/:basename.:ext"
+  config.dragonfly_url_host = ""
+  config.datastore_root_path = "/Users/jeffreywang/Development/NYVR_CMS/public/system/refinery/resources"
+  config.content_disposition = :attachment
 
   # Configure Dragonfly custom storage backend
   # The custom_backend setting by default defers to the core setting for this but can be set just for resources.
