@@ -7,16 +7,11 @@ gem 'puma', '~> 3.7.1'
 gem 'mime-types'
 gem 'sqlite3'
 # Use sqlite3 as the database for Active Record
-<<<<<<< HEAD
-gem 'sqlite3'
-group :development, :test do
-  gem 'sqlite3'
-end
-=======
+
 # group :development, :test do
 #   gem 'sqlite3'
 # end
->>>>>>> aa4279e303a644cd7cf683596e9297dbfedcb65e
+
 group :production do
   gem 'pg'
   gem 'dragonfly-s3_data_store'
