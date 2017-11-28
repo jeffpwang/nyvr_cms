@@ -1,5 +1,5 @@
 {
-	"version": "2.5", 
+	"version": <%= @version %>, 
 	"data": [
 		<% @contents.each do |content| %>
 			{
@@ -8,5 +8,6 @@
 				"content": "<%= request.base_url + content.file.url %>"
 			},
 		<% end %>
-	]
+	], 
+	"url": <%= request.original_url %>
 }

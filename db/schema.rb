@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171114151350) do
+ActiveRecord::Schema.define(version: 20171121165748) do
 
   create_table "refinery_authentication_devise_roles", force: :cascade do |t|
     t.string "title"
@@ -185,5 +185,9 @@ ActiveRecord::Schema.define(version: 20171114151350) do
 
   add_index "seo_meta", ["id"], name: "index_seo_meta_on_id"
   add_index "seo_meta", ["seo_meta_id", "seo_meta_type"], name: "id_type_index_on_seo_meta"
+
+  create_table "version_controls", force: :cascade do |t|
+    t.float "version"
+  end
 
 end

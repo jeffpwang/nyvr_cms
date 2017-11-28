@@ -24,14 +24,6 @@
     <% end %>
   </div>
 
-  <div class="field" id="title">
-    <span class='label_with_help'>
-      <%= f.label :resource_title, t('.resource_title') %>
-      <%= refinery_help_tag t('.resource_title_help') %>
-    </span>
-    <%= f.text_field :resource_title, placeholder: t('.resource_title') %>
-  </div>
-
   <%= render '/refinery/admin/form_actions', :f => f,
              :continue_editing => false,
              :hide_cancel => (@app_dialog or action_name == 'insert' or from_dialog?),

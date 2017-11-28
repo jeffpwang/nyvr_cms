@@ -20,6 +20,12 @@ module Refinery
       end
 
       def data
+        if VersionControl.any?
+          @version = VersionControl.all.first.version
+        else
+          @version = 0.0
+        end
+
         respond_to do |format|
           format.json
         end
